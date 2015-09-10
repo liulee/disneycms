@@ -1,0 +1,10 @@
+client/obj
+client/bin/
+server/obj/
+server/bin/
+api/obj/
+api/bin/
+
+deploy/src
+deploy/cms
+deploy/*.zip

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="GBK"?>
+<root ipp="192.168.0" zones="6">   <!-- ipp: IP地址前缀, zones: 区域数量 -->
+  <ccs ip="192.168.0.254"/>       <!-- 总控: IP地址 -->
+	<zone name="东主入口" zreg="1" > <!-- zreg: 门区在总控中的地址 -->
+		<d id="1" c="0" ip="101" enable="0"/>  <!-- id: 设备号, c: 卷带地址(bit位), ip: 地址, enable: 是否启用 -->
+		<d id="1" c="1" ip="102" enable="0"/>
+		<d id="1" c="2" ip="103" enable="0"/>
+		<d id="1" c="3" ip="104" enable="0"/>
+		<d id="1" c="4" ip="18"  enable="1"/> <!-- for test -->
+		<d id="1" c="5" ip="106" enable="0"/>
+		<d id="1" c="6" ip="111" enable="0"/>
+		<d id="1" c="7" ip="112" enable="0"/>
+		<d id="1" c="8" ip="113" enable="0"/>
+		<d id="1" c="9" ip="114" enable="0"/>
+		<d id="1" c="10" ip="115" enable="0"/>
+		<d id="1" c="11" ip="192.168.0.116" enable="0"/>
+	</zone>
+	<zone name="东售票厅" zreg="2" >
+		<d c="0" ip="121" enable="0"/> 
+		<d c="1" ip="122" enable="0"/>
+		<d c="2" ip="123" enable="0"/>
+		<d c="3" ip="124" enable="0"/>
+		<d c="4" ip="125" enable="0"/>
+		<d c="5" ip="126" enable="0"/>
+		<d c="6" ip="131" enable="0"/>
+		<d c="7" ip="132" enable="0"/>
+		<d c="8" ip="133" enable="0"/>
+		<d c="9" ip="134" enable="0"/>
+		<d c="10" ip="135" enable="0"/>
+		<d c="11" ip="192.168.0.136" enable="0"/>
+	</zone>
+	<zone name="南主入口" zreg="3" ></zone>
+	<zone name="西主入口" zreg="4"></zone>
+	<zone name="西售票厅" zreg="5"></zone>	
+	<zone name="北主入口" zreg="6">
+		<d id="1" c="0" ip="222" enable="0" /> <!-- for test -->
+	</zone>
+</root>
